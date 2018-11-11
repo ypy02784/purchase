@@ -17,7 +17,7 @@ def login(uname, pwd):
     time.sleep(3)
     driver.find_element_by_id("loginsubmit").click()
 
-    driver.get("https://cart.jd.com/cart.action")
+    # driver.get("https://cart.jd.com/cart.action")
 
     # driver.find_element_by_link_text("去结算").click()
     # now = datetime.datetime.now()
