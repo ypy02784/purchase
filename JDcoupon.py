@@ -43,7 +43,7 @@ def buy_on_time(buytime,quan_link):
 
 
    
-# entrance
+
 
 #自动登录，输入用户名和密码
 login('ypy02784@163.com', 'ypy19840525')
