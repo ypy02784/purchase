@@ -5,7 +5,7 @@ import time
 import os
 #使用谷歌浏览器，方便查看效果，如果追求速度可以用phantomJS
 chromedriver = "/Users/ypy/Downloads/chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
+# os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome(chromedriver)
 
 #调整最大窗口，否则某些元素无法显示
