@@ -45,6 +45,7 @@ def buy_on_time(buytime,quan_link):
    
 # entrance
 
-
+#自动登录，输入用户名和密码
 login('ypy02784@163.com', 'ypy19840525')
+#自动抢券设定，抢券时间及优惠券地址
 buy_on_time('2018-11-11 23:10:00','https://coupon.jd.com/ilink/couponSendFront/send_index.action?key=89fd337932504e7d80c96e46788d3416&roleId=15676830&to=https://sale.jd.com/mall/hF2HXITYgxb5c0.html')
