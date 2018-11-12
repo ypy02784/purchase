@@ -18,18 +18,18 @@ def buy_on_time(buytime):
   if driver.find_element_by_id("J_SelectAll1"):
     driver.find_element_by_id("J_SelectAll1").click()
   time.sleep(3)
- 
+  if driver.find_element_by_link_text("结 算"):
+    driver.find_element_by_link_text("结 算").click()
   while True:
     now = datetime.datetime.now()
     if now.strftime('%Y-%m-%d %H:%M:%S') == buytime:
       while True:
         try:
-          if driver.find_element_by_link_text("结 算"):
-            driver.find_element_by_link_text("结 算").click()
-            driver.find_element_by_link_text('提交订单').click()
+         
+          driver.find_element_by_link_text('提交订单').click()
         except:
           time.sleep(1)
     time.sleep(0.01)
 
-#login("英文账号",'密码')
+
 buy_on_time('2018-11-12 11:40:00')
