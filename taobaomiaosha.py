@@ -10,24 +10,24 @@ from selenium.webdriver.common.action_chains import ActionChains
 import random
 
 # chromedriver = "/Users/ypy/Downloads/chromedriver"
-chromedriver = "./chromedriver"
-os.environ["webdriver.chrome.driver"] = chromedriver
-
+# chromedriver = "./chromedriver"
+chromedriver = "./chromedriverWin.exe"
 driver = webdriver.Chrome(chromedriver)
 def login(uname, pwd):
   driver.get("https://www.taobao.com")
   # driver.get("https://login.taobao.com/member/login.jhtml?spm=a21bo.2017.754894437.1.5f7911d94ZFf0O&f=top&redirectURL=https%3A%2F%2Fwww.taobao.com%2F%3Fspm%3Da1z5k.7633538.0.0.26694c389zspmY")
   if driver.find_element_by_link_text("亲，请登录"):
     driver.find_element_by_link_text("亲，请登录").click()
-  time.sleep(1)
+  #留够时间扫码登陆，目前测试密码登陆滑动块会出错，只能手机扫码登陆
+  time.sleep(30)
   
   # if driver.find_element_by_link_text("密码登录"):
   #   driver.find_element_by_link_text("密码登录").click()
-  # time.sleep(1)
+  # time.sleep(10)
   
   # if driver.find_element_by_name("TPL_username"):
   #   driver.find_element_by_name("TPL_username").send_keys(uname)
-  time.sleep(20)
+  # time.sleep(20)
   # if driver.find_element_by_name("TPL_password"):
   #   driver.find_element_by_name("TPL_password").send_keys(pwd)
   # time.sleep(10)
