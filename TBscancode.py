@@ -26,7 +26,7 @@ def buy_on_time(buytime):
         try:
           if driver.find_element_by_link_text("结 算"):
             driver.find_element_by_link_text("结 算").click()
-          driver.find_element_by_link_text('提交订单').click()
+            driver.find_element_by_link_text('提交订单').click()
         except:
           time.sleep(1)
     time.sleep(0.01)
