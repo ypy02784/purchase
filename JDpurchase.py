@@ -4,7 +4,7 @@ import datetime
 import time
 
 
-driver = webdriver.Chrome(executable_path="/Users/ypy/Downloads/chromedriver")
+driver = webdriver.Chrome(executable_path="./chromedriver")
 
 def login(uname, pwd):
     driver.get("http://www.jd.com")
