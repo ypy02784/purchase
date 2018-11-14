@@ -21,6 +21,10 @@ def login(uname, pwd):
     time.sleep(10)#此处留十秒用于人操作进行滑块验证
     # driver.get("https://sale.jd.com/act/fxsPg3pquZ.html")
 
+    # driver.find_element_by_link_text("去结算").click()
+    # now = datetime.datetime.now()
+    # print('login success:',now.strftime('%Y-%m-%d %H:%M:%S'))
+
 
 # buytime = '2016-12-27 22:31:00' 
 def buy_on_time(buytime,quan_link):
@@ -42,5 +46,5 @@ def buy_on_time(buytime,quan_link):
 
 #自动登录，输入用户名和密码
 login('ypy02784@163.com', 'ypy19840525')
-#自动抢券设定，抢券时间及优惠券地址
-buy_on_time('2018-11-14 15:59:58','https://coupon.jd.com/ilink/couponSendFront/send_index.action?key=8ae26e4d5a5f4190b7b933bb3960e1ff&roleId=15018743&to=sale.jd.com/act/k1Apil0bIJQv4uS.html&')
+#自动抢券设定，抢券时间及优惠券地址,时间必须写成00：00：00格式，否则不匹配
+buy_on_time('2018-11-14 19:59:58','https://coupon.jd.com/ilink/couponSendFront/send_index.action?key=297e27e0b46c4af69b2abe915a9ddf27&roleId=15012289&to=sale.jd.com/act/fpgmdSRPst.html&cpdad=1DLSUE')
